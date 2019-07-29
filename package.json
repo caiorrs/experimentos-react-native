@@ -8,8 +8,11 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/slider": "^2.0.0",
+    "@react-native-community/viewpager": "^1.1.7",
     "react": "16.8.6",
-    "react-native": "0.60.4"
+    "react-native": "0.60.4",
+    "react-native-slider": "^0.11.0"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",

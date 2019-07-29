@@ -26,15 +26,15 @@ import {
   TextInput,
   TouchableHighlight,
   TouchableNativeFeedback,
-  TouchableOpacity
+  TouchableOpacity,
+  Alert,
+  AppRegistry
 } from 'react-native';
 
 import Slider from '@react-native-community/slider';
 import ViewPager from "@react-native-community/viewpager";
 
-const {height} = Dimensions.get('window');
-
-const App = () => {
+const App = () => {  
   return (
     <View style={{flex:1}}>
     {/* <KeyboardAvoidingView behavior="padding" enabled> */}
@@ -87,8 +87,6 @@ const App = () => {
             <Text style={[styles.text]}>ImageBackground</Text>
           </ImageBackground>
         </View>
-
-        {/* Daqui pra baixo não aparece */}
         <View style={[styles.section]}>
           <Text>ProgressBarAndroid</Text>
           <ProgressBarAndroid
@@ -239,12 +237,19 @@ const App = () => {
             </View>
           </ViewPager>
         </View> */}
+        <View style={[styles.section]}>
+          <Text style={[styles.text]}>Alert</Text>
+          <Button
+            title="Alert"
+            //onPress={this.funcAlerta}
+          />
+        </View>
         
       </ScrollView>
     {/* </KeyboardAvoidingView> */}
     </View>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   scrollView: {
